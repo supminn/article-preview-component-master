@@ -14,21 +14,65 @@ body {
 }
 
 .container {
-    display: flex;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-top: 5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+#img-drawer {
+    width: 100%;
+}
+
+.header {
+    margin-block-end: 0;
 }
 
 .txt-content {
-    background-color: white;
     color: var(--Very-Dark-Grayish-Blue);
+    padding: 0 1.5rem;
+}
+
+.txt-desc {
+    color: var(--Grayish-Blue);
+}
+
+.author-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+#img-author {
+    border-radius: 50%;
+    width: 20%;
+}
+
+.author-data {
+    flex: 1;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+.author-data span {
+    display: block;
+    margin-top: 0.2rem;
+    color: var(--Grayish-Blue);
 }
 
 #icon-share {
+    width: 8%;
+    height: 10%;
     background-color: var(--Light-Grayish-Blue);
+    margin: 0.5rem 0;
     padding: 0.5rem;
     border-radius: 50%;
 }
 
 .click-data {
+    visibility: hidden;
     padding: 1rem;
     padding-bottom: 0.5rem;
     border-radius: 0.5rem;
