@@ -13,6 +13,10 @@ body {
     background-color: var(--Light-Grayish-Blue);
 }
 
+.hidden {
+    display: none;
+}
+
 .container {
     background-color: white;
     width: 90%;
@@ -73,12 +77,25 @@ body {
     border-radius: 50%;
 }
 
+#icon-share-active {
+    background-color: var(--Grayish-Blue);
+    width: 7%;
+    padding: 0.5rem;
+    border-radius: 50%;
+    position: relative;
+    left: 10%;
+    top: 5%;
+}
+
 .click-data {
-    visibility: hidden;
-    padding: 1rem;
-    padding-bottom: 0.5rem;
-    border-radius: 0.5rem;
     background-color: var(--Very-Dark-Grayish-Blue);
+    position: absolute;
+    width: 77%;
+    left: 7%;
+    bottom: 11%;
+    padding: 1.3rem 1rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 
 .click-data * {
@@ -87,7 +104,13 @@ body {
 
 #share {
     color: var(--Grayish-Blue);
-    vertical-align: middle;
+    vertical-align: super;
+    font-size: medium;
+    letter-spacing: 0.3rem;
+}
+
+.social-icon {
+    width: 8%;
 }
 
 .attribution {
